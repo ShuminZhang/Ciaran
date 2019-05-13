@@ -13,12 +13,20 @@ import zh from '@angular/common/locales/zh';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ElModule } from 'element-angular'; 
 import { QuillModule } from 'ngx-quill';
+import { ForgetComponent } from './core/forget/forget.component';
+import { LoginComponent } from './core/login/login.component';
+import { RegistComponent } from './core/regist/regist.component';
+import { StartComponent } from './core/start/start.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ForgetComponent,
+    LoginComponent,
+    RegistComponent,
+    StartComponent
   ],
   imports: [
     NgbModule,
