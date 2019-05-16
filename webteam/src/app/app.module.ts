@@ -17,6 +17,7 @@ import { ForgetComponent } from './core/forget/forget.component';
 import { LoginComponent } from './core/login/login.component';
 import { RegistComponent } from './core/regist/regist.component';
 import { StartComponent } from './core/start/start.component';
+import { RaceComponent } from './core/race/race.component';
 
 registerLocaleData(zh);
 
@@ -26,7 +27,8 @@ registerLocaleData(zh);
     ForgetComponent,
     LoginComponent,
     RegistComponent,
-    StartComponent
+    StartComponent,
+    RaceComponent
   ],
   imports: [
     NgbModule,

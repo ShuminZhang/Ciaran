@@ -1,9 +1,18 @@
 <nz-layout>
-  <nz-header style="text-align:right;color: #123456;">
-    <a [routerLink]="[ '/login' ]" style="padding:0px 20px;color: #fff;">登录</a>
-    <a [routerLink]="[ '/regist' ]" style="padding:0px 20px;color: #fff;">注册</a>
-    <a [routerLink]="[ '/forget' ]" style="padding:0px 20px;color:#fff;">找密码</a>
+  <nz-header style="background: #123456;border-radius: 5px;margin: 0px 5px;">
+      <div nz-row>
+          <div nz-col nzSpan="12" style="text-align:left;padding-left: 10px;">
+              <i nz-icon nzType="global" nzTheme="outline" [nzSpin]="true"></i>
+              竞赛团队管理平台
+          </div>
+          <div nz-col nzSpan="12" style="text-align:right;">
+              <a [routerLink]="[ '/race' ]" style="padding:0px 20px;color:aliceblue;">| 竞赛简介</a>
+              <a [routerLink]="[ '/login' ]" style="padding:0px 20px;color:aliceblue;">| 登录</a>
+              <a [routerLink]="[ '/regist' ]" style="padding:0px 20px;color:aliceblue;">| 注册</a>
+              <a [routerLink]="[ '/forget' ]" style="padding:0px 20px;color:aliceblue;">| 密码找回</a>
+          </div>
+      </div>
   </nz-header>
-  <nz-content>Content</nz-content>
-  <nz-footer>Footer</nz-footer>
+  <nz-content style="margin:5px;border-radius:5px;">Content</nz-content>
+  <nz-footer style="margin:0px 5px;border-radius:0px 5px;">Footer</nz-footer>
 </nz-layout>
